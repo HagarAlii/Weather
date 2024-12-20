@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+   <link rel="shortcut icon" href="imgs/icon.png" type="image/x-icon">
+  <!-- fontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- logo font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap" rel="stylesheet">
+<!-- body font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Suranna&display=swap" rel="stylesheet">
+  <!-- css bootstrap -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+   <link rel="stylesheet" href="css/style.css">
+  <title>weather</title>
+</head>
+<body>
+  
+  <header class=" position-relative ">
+   <div class="container text-center p-5">
+    <div><h1>My Location</h1></div>
+    <div id="area"></div>
+   </div>
+
+   <section>
+    <div class="container-fluid z-n1 mb-5">
+      <div class="sun" style="width: 250px;"><img class="w-100" src="imgs/sun.png" alt=" cloud1"></div>
+    <div class="cloud cloud1" style="width: 300px;"><img class="w-100" src="imgs/cloud.png" alt=" cloud1"></div>
+    <div class="cloud cloud2" style="width: 400px;"><img class="w-100" src="imgs/cloud.png" alt="cloud2"></div>
+    <div class="cloud cloud3" style="width: 200px;"><img class="w-100" src="imgs/cloud.png" alt=" cloud3"></div>
+    <div class="cloud cloud4" style="width: 250px;"><img class="w-100" src="imgs/cloud.png" alt="cloud4"></div>
+    </div>
+    <div class="overflow-hidden position-absolute z-n1 start-0 end-0" style="top: 99%;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d3d3d3" fill-opacity="1" d="M0,224L80,192C160,160,320,96,480,64C640,32,800,32,960,53.3C1120,75,1280,117,1360,138.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+    </div>
+   </section>
+  </header>
+
+<section>
+  <div class="container mt-5 mb-5">
+   <div class="position-relative holder"> <input id="city" class="rounded-pill" type="search" placeholder="Find your location" >
+  <div class="findBtn position-absolute translate-middle-y"><button type="submit" class="rounded-pill">Find</button></div>
+  </div>
+  </div>
+</section>
+
+<section >
+  <div class="container text-start mt-5 p-5 ">
+    <div class="row gy-2">
+      <div class="col-md-4"><div class="card border-light mb-3" >
+        <div class="card-header d-flex justify-content-between align-items-center"></div>
+        <div class="card-body">
+          <h5 class="card-title1 gy-2"></h5>
+          <div class="card-text mt-5 d-flex justify-content-around">
+            <div><i class="fa-solid fa-umbrella"></i> <span>20%</span></div>
+            <div><i class="fa-solid fa-wind"></i> <span>18km/h</span></div>
+            <div><i class="fa-solid fa-location-crosshairs"></i> <span>East</span></div>
+
+          </div>
+        </div>
+      </div></div>
+
+      <div class="col-md-4"><div class="card border-light mb-3" >
+        <div class="card-header d-flex justify-content-between align-items-center"></div>
+        <div class="card-body">
+          <h5 class="card-title gy-2"></h5>
+          
+        </div>
+      </div></div>
+
+      <div class="col-md-4"><div class="card border-light mb-3" >
+        <div class="card-header d-flex justify-content-between align-items-center"></div>
+        <div class="card-body">
+          <h5 class="card-title gy-2"></h5>
+         
+        </div>
+      </div></div>
+
+      <div class="col-md-4"><div class="card border-light mb-3" >
+        <div class="card-header d-flex justify-content-between align-items-center"></div>
+        <div class="card-body">
+          <h5 class="card-title gy-2"></h5>
+         
+        </div>
+      </div></div>
+
+      <div class="col-md-4"><div class="card border-light mb-3" >
+        <div class="card-header d-flex justify-content-between align-items-center"></div>
+        <div class="card-body">
+          <h5 class="card-title gy-2"></h5>
+          
+        </div>
+      </div></div>
+
+      <div class="col-md-4"><div class="card border-light mb-3" >
+        <div class="card-header d-flex justify-content-between align-items-center"></div>
+        <div class="card-body">
+          <h5 class="card-title gy-2"></h5>
+        </div>
+      </div></div>
+   
+    </div>
+  </div>
+</section>
+
+  <!-- js bootstrap -->
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <!-- main js -->
+    <script src="js/index.js"></script>
+</body>
+</html>

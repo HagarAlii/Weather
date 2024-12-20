@@ -1,0 +1,119 @@
+:root{
+  --nav-font :"Yuji Mai", serif;
+}
+
+html,body{
+ font-family: "Suranna", serif;
+  font-weight: 400;
+  overflow-x: hidden !important;
+}
+
+
+header{
+  font-family: "Elsie", serif !important;
+  font-weight: 600;
+  background-color: #d3d3d3 ;
+}
+.fs-45{
+  font-size: 45px;
+}
+
+@keyframes cloud {
+  0%{
+    transform: translate(0%, 0%);
+  }
+  20%{
+    transform: translate(-2%, 10%);
+  }
+  40%{
+    transform: translate(1%, 7%);
+  }
+  60%{
+    transform: translate(-1%, 12%);
+  }
+  80%{
+    transform: translate(0%, 20%);
+  }
+  100%{
+    transform: translate(3%, 25%);
+  }
+}
+
+
+.sun,.cloud1 , .cloud2 , .cloud3 ,.cloud4{
+  position: absolute;
+  animation-name: cloud;
+  animation-duration: 15s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  
+}
+.sun{
+  top: -10%;
+  right: 0%;
+}
+.cloud1{
+  top: 0;
+}
+.cloud2{
+  top: 10%;
+  left: 70%;
+}
+.cloud3{
+  top: 45%;
+  right: 80%;
+}
+.cloud4{
+  top: 35%;
+  right: 40%;
+}
+
+input {
+  position: relative;
+  background-color: lightgray;
+  border: none;
+  width: 100%;
+  padding: 20px 25px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.573);
+  animation-name: holder;
+  animation-duration: 3s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+input:focus {
+  outline: none;
+}
+
+.findBtn{
+  top: 50%;
+  right: 1%;
+}
+
+.findBtn button{
+  padding: 10px 25px;
+  border: none;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.573);
+  transition: all 0.3s;
+  background-color: gainsboro !important;
+}
+.findBtn button:hover{
+  transform: scale(1.05);
+}
+.holder{
+  width: 85%;
+  margin: auto;
+  
+}
+
+@keyframes holder {
+  0%{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.573);
+  }
+  50%{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.573);
+  }
+  100%{
+    box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.573);
+  }
+}
+
